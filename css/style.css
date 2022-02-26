@@ -41,7 +41,7 @@ body {
   border-radius: 1rem;
   -webkit-filter: saturate(120%);
           filter: saturate(120%);
-  padding: 0 1rem 2rem 1rem;
+  width: 70%;
 }
 
 header {
@@ -79,7 +79,7 @@ main h1, main h2 {
 }
 
 .line {
-  width: 100%;
+  width: 111%;
 }
 
 .line hr {
