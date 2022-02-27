@@ -41,11 +41,10 @@ body {
   border-radius: 1rem;
   -webkit-filter: saturate(120%);
           filter: saturate(120%);
-  height: 55%;
 }
 
 main {
-  height: 75%;
+  height: 74%;
 }
 
 main .bg-pattern {
@@ -107,11 +106,5 @@ footer p > span {
   font-weight: 100;
   font-size: small;
   color: #969696;
-}
-
-@media (min-width: 500px) {
-  .container {
-    margin: 0 30rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */

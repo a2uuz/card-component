@@ -38,13 +38,13 @@ body{
     align-items: center;
     border-radius: 1rem;
     filter: saturate(120%);
-    height: 55%;
+    
 }
 
 
 
 main{
-    height: 75%;
+    height: 74%;
     
 
     .bg-pattern{
@@ -104,10 +104,4 @@ p>span{
     color: $Dark-gray;
 }
 
-}
-
-@media (min-width:500px){
-.container{
-    margin: 0 30rem;
-}
 }
