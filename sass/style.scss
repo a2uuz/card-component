@@ -26,7 +26,9 @@ body{
 
 }
 
-
+// .wrapper{
+//     width: 80%;
+// }
 
 .card{
     background-color: white;
@@ -36,17 +38,24 @@ body{
     align-items: center;
     border-radius: 1rem;
     filter: saturate(120%);
-    width: 70%;
+    height: 55%;
 }
 
 
 
 main{
+    height: 75%;
     
-    img{
-        width: 60%;
+
+    .bg-pattern{
+       width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .avatar {
+        width: 25%;
         border-radius: 50%;
-        outline: solid white 7px;
+      
     }
 
     h1{
@@ -63,24 +72,29 @@ main{
   
 }
 
-.line{
-    width: 111%;
+.profile{
+    position: relative;
+    top: -45px;
 }
-.line hr{
+
+.line{
+    width: 108%;
+
+ hr{
     
   border: none;
   border-top: 1px solid rgb(183, 183, 212);
   margin: 0.5rem 0.5rem 0 0.5rem;
-  opacity: 0.9;
+  opacity: 0.4;
   font-size: 0.9rem;
   margin: 1rem ;
 }
-
+}
 footer{
 display: grid;
 grid-auto-flow: column;
-grid-template-columns: repeat(3, 80px);
-
+grid-template-columns: repeat(3, 100px);
+padding-bottom: 1rem;
 p{
     font-weight: 800;
 }
@@ -89,6 +103,7 @@ p>span{
     font-size: small;
     color: $Dark-gray;
 }
+
 }
 
 @media (min-width:500px){
