@@ -43,6 +43,27 @@ body {
           filter: saturate(120%);
 }
 
+.card::before,
+.card::after {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+}
+
+.card::before {
+  background: top/cover url(../images/bg-pattern-bottom.svg) no-repeat;
+  top: 15rem;
+  left: 13rem;
+  z-index: 0;
+}
+
+.card::after {
+  background: top/cover url(../images/bg-pattern-top.svg) no-repeat;
+  bottom: 15rem;
+  right: 13rem;
+}
+
 main {
   height: 74%;
 }
