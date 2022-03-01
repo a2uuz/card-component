@@ -7,4 +7,4 @@
 **Thanks for checking out my work.** 🚀
 
 
-[Live Site]("https://a2uuz.github.io/card-component/")
+[Live Site](https://a2uuz.github.io/card-component/)
