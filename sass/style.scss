@@ -10,6 +10,14 @@ $Dark-gray: hsl(0, 0%, 59%);
 //FONTS
 $font-primary:'Kumbh Sans', sans-serif;
 
+// MIXINS
+@mixin flex {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    @content;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -18,56 +26,21 @@ $font-primary:'Kumbh Sans', sans-serif;
 body{
     background-color: $Dark-cyan;
     font-family: $font-primary;
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex();
+    justify-content: center;  
     height: 100vh;
-
+    overflow: hidden;
 }
 
-// .wrapper{
-//     width: 80%;
-// }
+
 
 .card{
     position: relative;
     background-color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex();
     border-radius: 1rem;
-    filter: saturate(120%);
-    
-    
 }
-
-
-&::before,
-&::after{
-content: '';
-width: 300px;
-height: 300px;
-
-position: absolute;
-z-index: -1;
-}
-
-&::before{
-    background: top/cover url(../images/bg-pattern-bottom.svg) no-repeat;
-    top: 15rem;
-    left: 15rem;
-    
-}
-&::after{
-    background: top/cover url(../images/bg-pattern-top.svg) no-repeat;
-    bottom: 15rem;
-    right: 15rem;
-}
-
-
-
 
 
 main{
@@ -102,7 +75,12 @@ main{
 .profile{
     position: relative;
     top: -45px;
+
+    img{
+            border: white solid 5px;
+    }
 }
+
 
 .line{
     width: 108%;
@@ -131,4 +109,32 @@ p>span{
     color: $Dark-gray;
 }
 
+}
+
+
+
+@media (min-width:375px){
+    
+.card::before,
+.card::after{
+content: '';
+width: 900px;
+height: 900px;
+position: absolute;
+z-index: -1;
+}
+
+&::after{
+    background: url(../images/bg-pattern-bottom.svg) no-repeat;
+    top: 10rem;
+    left: 10rem;  
+}
+
+
+&::before{
+    background:  url(../images/bg-pattern-top.svg) no-repeat;
+    bottom: 10rem;
+    right: 10rem;
+   transform: rotate(150deg);
+}
 }
